@@ -37,7 +37,7 @@ public class Access extends HttpServlet{
 				Class.forName("com.mysql.jdbc.Driver");
 			 c=DriverManager.getConnection("jdbc:mysql://localhost:3306/employee", "root", "Current-Root-Password");
 
-			if("role".equals("admin")) {
+			if(role.equals("admin")) {
 				System.out.println("CONNECTION SUCCESSFUL");
 
 								
